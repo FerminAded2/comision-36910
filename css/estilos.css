@@ -1,0 +1,407 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FFF0C9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+body { 
+    background-color: #ebd2c2;
+    font-family: montserrat;
+}
+
+footer {
+    background-color: #FFF0C9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.flexHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.flexMain {
+    display: flex;
+    justify-content: center;
+    text-align: center;  
+}
+
+.logoResponsive{
+    display: none;
+}
+
+.titulo{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flexFlechaMain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.parrafito {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    padding: 30px; 
+    background-color: #276652;
+    color: #95d5a5;
+}
+
+.lagenaria {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    padding: 30px;
+    background-color: #332d29;
+    color: #dcb37b;
+
+} 
+
+
+.tarjetas a {
+    text-align: center;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    text-decoration: none;
+    color: #95d5a5;;
+}
+
+.gridContainer3 {
+    display: grid;
+    grid-template-columns: 450px 450px;
+}
+
+
+    
+
+.flexFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navegacion {
+    width: 410px;
+    margin: 0px;
+    background-color: #efefef;
+}
+
+.openHeader {
+    color: darkgreen;
+    width: 50px;
+    display: none;
+}
+
+.cruz {
+    display: none;
+}
+
+
+.navegacion ul {
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    list-style: none;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: burlywood;
+}
+
+.menu li a:hover {
+    color: darkolivegreen;
+    transition: all .3s;
+}
+
+.submenu {
+    position: absolute;
+    background-color: darkslategrey;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #efefef;   
+}
+
+.menu li:hover .submenu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.pajarito {
+    display: flex;
+    justify-content: center;
+}
+
+.gridContainerProductos{  
+    display: grid;
+    grid-template-columns: repeat(4, 390px);
+    grid-template-rows: repeat(2, 750px);
+    justify-content: space-around;
+    
+}
+
+.gridContainerProductos2 {
+    display: grid;
+    grid-template-columns: repeat(4, 390px);
+    grid-template-rows: repeat(3, 750px);
+    justify-content: space-around;
+
+}
+
+.card {
+    width: 350px;
+    height: 650px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0,4);
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(72, 95, 51);
+}
+
+.card h4 {
+    padding: 10px;
+}
+
+
+.pez {
+    display: flex;
+    justify-content: center;
+}
+
+.producto{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contact {
+    text-align: center;
+    
+}
+
+.contacto {
+    text-align: center;
+}
+
+.copyr {
+    display: none;
+}
+
+.copyd {
+    display: block;
+}
+
+form{
+    width: 500px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 420px){
+    .pajarito {
+        display: flex;
+        justify-content: center;
+        font-size:x-large;
+    }
+
+    .pez {
+        display: flex;
+        justify-content: center;
+        font-size:x-large;
+    }
+    
+    .gridContainerProductos{  
+        display: grid;
+        grid-template-columns: 390px;
+        grid-template-rows: repeat(6, 750px);
+        margin-left: 40px;
+        justify-content: space-around;
+    }
+
+    .gridContainerProductos2{  
+        display: grid;
+        grid-template-columns: 390px;
+        grid-template-rows: repeat(12, 750px);
+        margin-left: 40px;
+        justify-content: space-around;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .openHeader {
+        display: block;
+        text-decoration: none;
+    }
+
+    .cruz {
+        display: block;
+        text-decoration: none;
+        margin: 20px;
+    }
+
+    #sidebar {
+        background-color: gray;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+        width: 80%;
+        max-width: 300px;
+
+
+        transform:translateX(-100%);
+        transition: transform 0.5s;
+    }
+
+     #sidebar menu {
+         height: 100%;
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-start;
+    }
+
+    #sidebar:target {
+        transform: translate(0);
+    }
+
+    .logoCaigua2{
+        display: none;
+    }
+
+    .logoCaigua {
+        display: none;
+    }
+
+    .logoResponsive{
+        display: block;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+    .titulo{
+        top: 32%;
+        left: 50%;
+
+    }
+    .parrafito p{
+        width: 100%;
+        height: 60px;   
+    }
+
+    .copyr {
+        display: block;
+        font-size:smaller;
+    }
+
+    .copyd {
+        display: none;
+    }
+
+    form {
+        width: 400px;
+    }
+
+    .lagenaria {
+        width: 420px;
+        margin: auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    
+
+    .gridContainer3 {
+        display: grid;
+        grid-template-columns: 225px 225px;
+        grid-template-rows: 320px;
+    }
+
+    .gridContainer3 img{
+        width: 220px;
+        height: 300px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
