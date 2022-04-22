@@ -19,86 +19,26 @@ footer {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-
+/* HEADER */
 .flexHeader {
     display: flex;
     justify-content: space-between;
-    align-items: center;   
-}
-
-.flexMain {
-    display: flex;
-    justify-content: center;
-    text-align: center;  
+    align-items: center;  
 }
 
 .logoResponsive{
     display: none;
 }
 
-.titulo{
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.flexFlechaMain {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.tarjetas {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    display: flex;
-    justify-content: center;
-    
+.openHeader {
+    color: darkgreen;
+    width: 50px;
+    display: none;
 
 }
 
-.parrafito {
-    text-align: center;
-    width: 400px;
-    height: 550px;
-    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
-    padding: 30px; 
-    background-color: #276652;
-    color: #95d5a5;
-}
-
-.lagenaria {
-    text-align: center;
-    width: 400px;
-    height: 550px;
-    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
-    padding: 30px;
-    background-color: #332d29;
-    color: #dcb37b;
-
-} 
-
-
-.tarjetas a {
-    text-align: center;
-    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
-    text-decoration: none;
-    color: #95d5a5;;
-}
-
-.gridContainer3 {
-    display: grid;
-    grid-template-columns: 450px 450px;
-}
-
-
-    
-
-.flexFooter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cruz {
+    display: none;
 }
 
 
@@ -107,17 +47,6 @@ footer {
     margin: 0px;
     background-color: #efefef;
 }
-
-.openHeader {
-    color: darkgreen;
-    width: 50px;
-    display: none;
-}
-
-.cruz {
-    display: none;
-}
-
 
 .navegacion ul {
     box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
@@ -162,19 +91,93 @@ footer {
     visibility: visible;
     opacity: 1;
 }
+/*HEADER */
 
 
+/* MAIN INDEX */
+.flexMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    background-color: #EBD2C2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23EBD2C2' cx='50' cy='0' r='50'/%3E%3Cg fill='%23e4ccb9' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23dcc6b1' cx='50' cy='100' r='50'/%3E%3Cg fill='%23d4c0a9' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ccbaa1' cx='50' cy='200' r='50'/%3E%3Cg fill='%23c3b599' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23baaf91' cx='50' cy='300' r='50'/%3E%3Cg fill='%23b1aa8a' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a8a484' cx='50' cy='400' r='50'/%3E%3Cg fill='%239e9f7d' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23959a77' cx='50' cy='500' r='50'/%3E%3Cg fill='%238b9572' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%2381906d' cx='50' cy='600' r='50'/%3E%3Cg fill='%23768a68' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%236c8564' cx='50' cy='700' r='50'/%3E%3Cg fill='%23628060' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23577b5c' cx='50' cy='800' r='50'/%3E%3Cg fill='%234c7659' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23407156' cx='50' cy='900' r='50'/%3E%3Cg fill='%23346b54' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23276652' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+    width: auto;
+    height: 300px;
+}
+
+.flexFlechaMain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.gridContainer3 {
+    width: auto;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.gridContainer3 img {
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tarjetas a {
+    text-align: center;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    text-decoration: none;
+    color: #95d5a5;;
+}
+
+.parrafito {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    padding: 30px; 
+    background-color: #276652;
+    color: #95d5a5;
+}
+.lagenaria {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    padding: 30px;
+    background-color: #332d29;
+    color: #dcb37b;
+} 
+/*MAIN INDEX */
+
+/* PRODUCTOS/PEZ/BIRD */
 .pajarito {
     display: flex;
     justify-content: center;
+}
+.pez {
+    display: flex;
+    justify-content: center;
+}
+.producto{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .gridContainerProductos{  
     display: grid;
     grid-template-columns: repeat(4, 390px);
     grid-template-rows: repeat(2, 750px);
-    justify-content: space-around;
-    
+    justify-content: space-around;  
+
 }
 
 .gridContainerProductos2 {
@@ -188,29 +191,21 @@ footer {
 .card {
     width: 350px;
     height: 650px;
-    border-radius: 5px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0,4);
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%); 
+    background-color: #276652;
+    color: #95d5a5;
     overflow: hidden;
     text-align: center;
-    background-color: rgb(72, 95, 51);
 }
 
 .card h4 {
     padding: 10px;
 }
 
+/* PRODUCTOS/PEZ/BIRD */
 
-.pez {
-    display: flex;
-    justify-content: center;
-}
 
-.producto{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
+/* DONDE ENCONTRARNOS */
 .contact {
     text-align: center;
     
@@ -220,15 +215,7 @@ footer {
     text-align: center;
 }
 
-.copyr {
-    display: none;
-}
-
-.copyd {
-    display: block;
-}
-
-form{
+form {
     width: 500px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.4);
@@ -249,7 +236,34 @@ input, textarea {
     color: white;
 }
 
+/*DONDE ECNONTRARNOS */
+
+
+/* FOOTER */
+.flexFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyr {
+    display: none;
+}
+
+.copyd {
+    display: block;
+}
+/* FOOTER */
+
+
 @media screen and (max-width: 420px){
+
+    .flexMain {
+        width: auto;
+        height: 150px;
+    }
+
+
     .pajarito {
         display: flex;
         justify-content: center;
@@ -332,20 +346,6 @@ input, textarea {
         display: block;
     }
 
-    .banner {
-        width: 100%;
-        height: auto;
-    }
-    .titulo{
-        top: 32%;
-        left: 50%;
-
-    }
-    .parrafito p{
-        width: 100%;
-        height: 60px;   
-    }
-
     .copyr {
         display: block;
         font-size:smaller;
@@ -359,30 +359,39 @@ input, textarea {
         width: 400px;
     }
 
-    .lagenaria {
-        width: 420px;
-        margin: auto;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.4);
-        border-radius: 10px;
-        box-sizing: border-box;
+    .tarjetas {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 470px; 
     }
 
-    
+    .parrafito {
+        text-align: center;
+        width: 350px;
+        height: 450px;
+        box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+        padding: 30px; 
+        background-color: #276652;
+        color: #95d5a5;
+    }
+    .lagenaria {
+        text-align: center;
+        width: 350px;
+        height: 450px;
+        box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+        padding: 30px;
+        background-color: #332d29;
+        color: #dcb37b;
+    } 
 
     .gridContainer3 {
-        display: grid;
-        grid-template-columns: 225px 225px;
-        grid-template-rows: 320px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 180px;
+        margin-right: 10px;
     }
-
-    .gridContainer3 img{
-        width: 220px;
-        height: 300px;
-    }
-
 }
-
 
 
 
