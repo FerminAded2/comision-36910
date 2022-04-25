@@ -77,6 +77,7 @@ footer {
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
+    z-index: 1000;
 }
 
 .submenu li a {
@@ -84,6 +85,7 @@ footer {
     padding: 15px;
     text-decoration: none;
     color: #efefef;   
+    
 }
 
 .menu li:hover .submenu {
@@ -255,9 +257,31 @@ input, textarea {
 }
 /* FOOTER */
 
+@media screen and (max-width: 1024px) {
+
+    
+    
+    .gridContainerProductos{  
+        display: grid;
+        grid-template-columns: 390px 390px;
+        grid-template-rows: repeat(3, 750px);
+        margin-left: 40px;
+        justify-content: space-around;
+    }
+
+    .gridContainerProductos2{  
+        display: grid;
+        grid-template-columns: 390px 390px;
+        grid-template-rows: repeat(6, 750px);
+        margin-left: 40px;
+        justify-content: space-around;
+    }
+
+}
 
 @media screen and (max-width: 420px){
-
+    
+    
     .flexMain {
         width: auto;
         height: 150px;
@@ -297,7 +321,9 @@ input, textarea {
         flex-direction: column;
         
     }
+
     
+
     .openHeader {
         display: block;
         text-decoration: none;
@@ -392,7 +418,6 @@ input, textarea {
         margin-right: 10px;
     }
 }
-
 
 
 
