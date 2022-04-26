@@ -98,17 +98,36 @@ footer {
 
 /* MAIN INDEX */
 .flexMain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;  
-    background-color: #EBD2C2;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23EBD2C2' cx='50' cy='0' r='50'/%3E%3Cg fill='%23e4ccb9' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23dcc6b1' cx='50' cy='100' r='50'/%3E%3Cg fill='%23d4c0a9' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ccbaa1' cx='50' cy='200' r='50'/%3E%3Cg fill='%23c3b599' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23baaf91' cx='50' cy='300' r='50'/%3E%3Cg fill='%23b1aa8a' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a8a484' cx='50' cy='400' r='50'/%3E%3Cg fill='%239e9f7d' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23959a77' cx='50' cy='500' r='50'/%3E%3Cg fill='%238b9572' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%2381906d' cx='50' cy='600' r='50'/%3E%3Cg fill='%23768a68' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%236c8564' cx='50' cy='700' r='50'/%3E%3Cg fill='%23628060' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23577b5c' cx='50' cy='800' r='50'/%3E%3Cg fill='%234c7659' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23407156' cx='50' cy='900' r='50'/%3E%3Cg fill='%23346b54' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23276652' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: contain;
     width: auto;
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: rgb(149,213,160);
+    background: radial-gradient(circle, rgba(149,213,160,1) 0%, rgba(39,102,82,1) 100%);
 }
+
+.animacion{
+    animation-name: caiguaefecto;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes caiguaefecto{
+    0%{
+        transform: scale(0.3); 
+    }
+
+    from {
+        opacity: 0.5;
+    }
+
+    to{
+        opacity: 0;
+    } 
+}
+
+
 
 .flexFlechaMain {
     display: flex;
