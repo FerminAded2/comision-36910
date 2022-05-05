@@ -127,6 +127,9 @@ footer {
     } 
 }
 
+.titulo {
+    text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.4);
+}
 
 
 .flexFlechaMain {
@@ -142,6 +145,7 @@ footer {
     justify-content: center;
 }
 .gridContainer3 img {
+    
     box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
 }
 
@@ -296,9 +300,14 @@ input, textarea {
 
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 838px){
     
-    
+    .flexRedes{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
     .flexMain {
         width: auto;
         height: 150px;
@@ -391,7 +400,7 @@ input, textarea {
 
     .copyr {
         display: block;
-        font-size:smaller;
+        font-size:large;
     }
 
     .copyd {
@@ -427,13 +436,47 @@ input, textarea {
         color: #dcb37b;
     } 
 
-    .gridContainer3 {
+    .gridContainer3 img {
         display: flex;
         justify-content: center;
-        width: 100%;
-        height: 180px;
-        margin-right: 10px;
+        width: 500px;
+        height: 250px; 
     }
+}
+
+@media screen and (max-width: 516px){
+    .gridContainer3 img {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 200px; 
+    }
+    .flexRedes{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 416px){
+    .gridContainer3 img {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        height: 180px; 
+    }
+
+    .flexRedes{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .copyr {
+        display: block;
+        font-size:medium;
+    }
+
 }
 
 
